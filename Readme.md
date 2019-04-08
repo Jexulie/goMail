@@ -16,6 +16,8 @@ func main() {
 		"some-email",
 		"some-pw",
 	)
+	
+	mailer.AddAttachment("love-letter.txt")
 
 	mailer.SendMail([]string{"some-email-again"}, "Test", "Test Message")
 
